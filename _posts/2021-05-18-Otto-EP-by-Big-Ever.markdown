@@ -3,8 +3,8 @@ layout: post
 title: "Otto EP by Big Ever"
 description: 'Coming through with four distinctive and vibrant club tracks primed for all hours of the night or early morning, Big Ever lets loose on 2021 with a bold and unique take on percussion, bass, and ambiance working in unison to extraordinary effect.'
 image: /assets/images/post-images/0024588313_10.jpg
-thumbnail_image_alt: Otto EP Vinyl Record by Big Ever
-thumbnail_image_caption: Otto EP Vinyl Record by Big Ever
+image_alt: Otto EP Vinyl Record by Big Ever
+image_caption: Otto EP Vinyl Record by Big Ever
 author: admin
 date: 2021-05-18 21:42:38 -0700
 dateModified: 2021-05-18 21:42:38 -0700

@@ -3,8 +3,8 @@ layout: post
 title: "Un violador en tu camino by Nene H"
 description: 'The patriarchy is a judge who judges us by birth and our punishment is the violence you can see.'
 image: /assets/images/post-images/nene-h-un-violador-en-tu-camino.jpg
-thumbnail_image_alt: Un violador en tu camino by Nene H
-thumbnail_image_caption: Un violador en tu camino by Nene H
+image_alt: Un violador en tu camino by Nene H
+image_caption: Un violador en tu camino by Nene H
 author: admin
 date: 2021-06-01 20:00:38 -0700
 dateModified:

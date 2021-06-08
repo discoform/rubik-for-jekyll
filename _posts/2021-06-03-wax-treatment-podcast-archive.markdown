@@ -3,13 +3,13 @@ layout: post
 title: "Wax Treatment podcast archives still available"
 description: 'After 10 years of activity, Wax Treatment has been discontinued, but the podcast archives are still available... for now.'
 image: /assets/images/post-images/wax-treatment-logo.jpg
-thumbnail_image_alt: Wax Treatment logo
-thumbnail_image_caption: Wax Treatment logo
+image_alt: Wax Treatment logo
+image_caption: Wax Treatment logo
 author: admin
 date: 2021-06-03 20:00:38 -0700
 dateModified:
 categories:
-    [Music, Podcasts, Soundcloud]
+    [Podcasts, Soundcloud]
 ---
 
 

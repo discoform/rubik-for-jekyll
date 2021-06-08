@@ -3,13 +3,13 @@ layout: post
 title: "Jon Hassell x Resident Advisor interview (EX.270)"
 description: 'A trip into the Fourth World with an icon of experimental music.'
 image: /assets/images/post-images/jon-hassell-interview-resident-advisor.jpg
-thumbnail_image_alt: Jon Hassell x Resident Advisor interview
-thumbnail_image_caption: Jon Hassell x Resident Advisor interview
+image_alt: Jon Hassell x Resident Advisor interview
+image_caption: Jon Hassell x Resident Advisor interview
 author: admin
 date: 2021-06-07 11:00:38 -0700
 dateModified:
 categories:
-    [Music, Interviews, Soundcloud]
+    [Interviews, Soundcloud]
 ---
 <iframe loading="lazy" width="100%" height="166" title="Listen to {{page.title}}" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226564547&color=%232f2f2f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
