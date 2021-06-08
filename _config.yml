@@ -31,14 +31,14 @@ email: addyour@email.com # addyour@email.com
 description: Rubik is an open source theme for Jekyll bloggers # Add a site description here
 summary: Rubik is an open source theme for Jekyll bloggers # Add your site summary here. It can be similar to the description amd will be used by Jekyll SEO Tag
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.website.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://discoform-rubik.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/logos/rubik-logo.svg
 
 ###############################################################
 ## Social settings (follows the Jekyll SEO format (https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md))
 ###############################################################
 twitter:
-  username: Rubik Theme
+  username: discoform
   card: summary
 
 facebook:
