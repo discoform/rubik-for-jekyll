@@ -66,3 +66,5 @@ The Rubik theme has a simple HTML contact form with the [Netlify data attributio
 ## Search functionality
 
 We've implemented the solution suggested by [WebJeda](https://blog.webjeda.com/instant-jekyll-search/). The solution works well and is lightweight, but not very feature-rich.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/121e1d01-ba6c-419d-b20e-fe26a6615620/deploy-status)](https://app.netlify.com/sites/discoform-rubik/deploys)
