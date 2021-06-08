@@ -37,13 +37,15 @@ This plugin is set up to do the following:
 A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. This is a pretty stock inclusion for any Jekyll build. It allows readers to add your site to their RSS feed reader.
 
 ### [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site. 
+Jekyll plugin to silently generate a sitemaps.org compliant sitemap for your Jekyll site.
 
 ### [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag)
 
 The current configuration automatically builds resized `.webp` images for most of your image library. The settings can be found in `_data/picture.yml` if you're feeling adventurous...
 
-_❗ NOTE: Jekyll Picture Tag can be a little fussy (at least, it has been for me). If you see build errors in Netlify you should ensure that your Build Image Selection is set to __Ubuntu Trusty 14.04__._
+_❗ NOTE: Jekyll Picture Tag can be a little fussy (at least, it has been for me). If you see build errors in Netlify you should ensure that your Build Image Selection is set to __Ubuntu Trusty 14.04__ or __Ubuntu Focal 20.04 (beta)__._
+
+![netlify-build-image-selection](netlify-build-image-selection.png)
 
 ---
 
