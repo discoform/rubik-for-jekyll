@@ -1,0 +1,16 @@
+{% include header.html%}
+<main>
+    <article>
+        <!-- page content begins -->
+        <section class="post-content">
+            {{content}}
+        </section>
+        <!-- page content ends -->
+        {% if page.title != 'Search' %}
+        <!-- aside begins -->
+        {% include aside.html %}
+        <!-- aside ends -->
+        {% endif %}
+    </article>
+</main>
+{% include footer.html%}

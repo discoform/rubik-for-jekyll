@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href={{"/css/style.css" | baseurl}}> {% seo %}
+</head>
+
+<body class="{{page.layout}}">
+	<header class="site-header">
+		{% if site.logo %}
+		<a class="site-title" href="/"><img class="site-logo" src="{{site.logo}}" alt="{site.title}} logo"></a>
+		{% else %}
+		<h1 class="site-title"><a href="/">{{site.title | upcase }}</a></h1>
+		{% endif %}
+		<nav id="main-menu" class="topnav">
+			<a href="javascript:void(0);" title="Expand Menu" class="icon" onclick="mainNavigation()"><img class="icon"
+					src="/assets/images/icons/menu.svg" alt="Expand Main Menu"></a>
+			<ul>
+				{% for item in site.data.siteNavigation.mainNavigation -%}
+				<li><a href="{{ site.baseurl }}{{ item.link }}">{{item.name | upcase}}</a></li>
+				{% endfor -%}
+			</ul>
+		</nav>
+	</header>

@@ -1,0 +1,57 @@
+<footer id="main-footer" class="site-footer">
+    <a href="javascript:void(0);" title="Expand Menu" class="icon" onclick="mobileFooter()"><img class="icon" src="/assets/images/icons/arrow-down.svg" alt="Expand Main Menu"></a>
+    {% if site.data.siteNavigation.footerNavigation %}
+    <section class="widget footer-navigation">
+        <span class="widget-title">Navigate</span>
+        <nav id="secondary-menu">
+            <ul>
+                {%- for item in site.data.siteNavigation.footerNavigation -%}<li><a
+                        href="{{ site.baseurl }}{{ item.link }}">{{
+                        item.name }}</a></li>{%- endfor -%}
+            </ul>
+        </nav>
+    </section>
+    <section class="widget subscribe">
+        <span class="widget-title">Subscribe</span>
+        <nav>
+            <ul>
+                {%- for item in site.data.siteSocial.socialWidget.items -%}
+                {%- if item.display == true -%}
+                <li>
+                    <a aria-label="Follow {{site.title}} on {{ item.network }}" href="{{ item.url }}"
+                        title="Follow {{site.title}} on {{ item.network }}" target="_blank"
+                        rel="noreferrer">{{item.network}}</a>
+                </li>
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+        </nav>
+    </section>
+    {%- endif -%}
+
+    <section class="widget categories">
+        <span class="widget-title">Categories</span>
+        <nav>
+            <ul>
+                {% assign categories_list = site.categories %}
+                {% if categories_list.first[0] == null %}
+                {% for category in categories_list %}
+                <li><a href="/categories#{{ category | camelcase | url_escape | strip | replace: ' ', '-' }}"> {{
+                        category | camelcase }} <span>({{ site.tags[category].size }})</span></a></li>
+                {% endfor %}
+                {% else %}
+                {% for category in categories_list %}
+                <li><a href="/categories#{{ category[0] | camelcase | url_escape | strip | replace: ' ', '-' }}">{{
+                        category[0] | camelcase }} <span>({{ category[1].size }})</span></a></li>
+                {% endfor %}
+                {% endif %}
+                {% assign categories_list = nil %}
+            </ul>
+        </nav>
+    </section>
+    <div id="colophon"><a href="https://github.com/discoform/rubik" target="_blank" rel="noopener">Rubik Theme for Jekyll</a></div>
+</footer>
+<script src="/js/expand-menu.js"></script>
+<script src="/js/search.js"></script>
+</body>
+</html>

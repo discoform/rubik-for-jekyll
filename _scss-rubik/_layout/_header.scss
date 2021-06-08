@@ -1,0 +1,76 @@
+// desktop site header and site navigation *****************************************************
+// ****************************************************************************************
+.site-title a {
+    text-decoration: none;
+}
+
+img.site-logo {
+    width: 200px;
+    box-shadow: none;
+}
+@media only screen and (max-width: calc(#{$breakpoint-2} - 1px)) {
+    header.site-header {
+        display: flex;
+        flex-direction: column;
+        .site-title {
+            order: 2;
+            margin: $base-spacing/2 auto;
+            text-align: center;
+        }
+
+        #main-menu {
+            @include menu-expand;
+            order: 1;
+            text-align: center;
+            margin: $base-spacing/2 auto 0;
+            li a {
+                padding: $base-spacing/4;
+                display: block;
+                border-bottom: 2px solid var(--dark);
+            }
+            .icon {
+                margin: auto;
+            }
+
+            &.responsive {
+                width: 100%;
+                ul {
+                    margin-bottom: 0;
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: $breakpoint-2) {
+    header.site-header {
+        max-width: $breakpoint-2;
+
+        body.home & {
+            max-width: $breakpoint-3;
+        }
+        display: flex;
+        justify-content: space-between;
+        margin: $base-spacing auto;
+        > * {
+            max-width: $breakpoint-1/2;
+        }
+    }
+    nav#main-menu {
+        margin-top: auto;
+        margin-bottom: auto;
+        .icon {
+            display: none;
+        }
+        ul {
+            display: unset;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            li {
+                display: inline;
+                margin-left: $base-spacing/4;
+            }
+        }
+    }
+}

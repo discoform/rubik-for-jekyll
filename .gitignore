@@ -1,0 +1,9 @@
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.prettierignore
+vendor/
+node_modules/
+_site/
+#_posts
+#assets/images/post-images

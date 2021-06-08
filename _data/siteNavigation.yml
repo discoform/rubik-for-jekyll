@@ -1,0 +1,19 @@
+
+#these links will display in a nav menu within the sitewide header
+mainNavigation:
+  - name: About
+    link: /about/
+  - name: Contact
+    link: /contact/
+  - name: Search
+    link: /search/
+#these links will display in a widget within the sitewide footer
+footerNavigation:
+  - name: About
+    link: /about/
+  - name: Contact
+    link: /contact/
+#these links will display on the homepage only,near the thebottom right cornerof the 'Earlier Posts' section
+asideNavigation:
+  - name: Subscribe to the RSS Feed
+    link: /feed.xml

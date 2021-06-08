@@ -1,0 +1,60 @@
+{%- include header.html %}
+<main>
+	<article>
+		<!-- post header begins -->
+		<header class="post-header">
+			<h1 class="post-title">{{page.title}}</h1>
+			<p class="post-summary">{{page.description}}</p>
+			<span class="reading-time"><time
+					title="Estimated reading time = {%- assign words = content | number_of_words %}{%- if words < 360 %} 1 minute {%- else %} {{ words | divided_by:180 }} minutes {%- endif %}">{%-
+					assign words = content | number_of_words %}{%- if words < 360 %} 1 min read. {%- else %} {{ words
+						|divided_by:180 }} min read. {%- endif %}</time></span>
+			<div class="post-meta">
+				<span>Published:</span>
+				<time datetime="{{page.date}}">{{page.date | date: "%b %d, %Y" }}</time>
+				{% if page.dateModified %}
+				- <span>Modified:</span>
+				<time datetime="{{page.dateModified}}">{{page.date | date: "%b %d, %Y" }}</time>
+				{%endif%}
+			</div>
+			{% include post-share.html %}
+		</header>
+		<!-- post header ends + article content begins -->
+		<section class="post-content">
+			{%- picture {{page.image}} --picture --alt {{page.thumbnail_image_alt}} %}
+			<figcaption>{{page.thumbnail_image_caption}}</figcaption>
+			{{content}}
+		</section>
+		<!-- article content ends + article aside begins -->
+		<aside>
+			<div class="recommended-posts">
+				<h3>Recommended Content</h3>
+				<ul>{%- assign maxRelated = 4 %} {%- assign minCommonTags = 1 %} {%- assign
+					maxRelatedCounter = 0 %} {%- for post in site.posts %} {%- assign
+					sameTagCount = 0 %} {%- assign commonTags = '' %} {%- for category in
+					post.categories %} {%- if post.url != page.url %} {%- if page.categories
+					contains category %} {%- assign sameTagCount = sameTagCount | plus: 1 %}
+					{%- endif %} {%- endif %} {%- endfor %} {% if sameTagCount >=
+					minCommonTags %}<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a>
+					</li>
+					{% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %} {%- if
+					maxRelatedCounter >= maxRelated %} {%- break %} {%- endif %} {%- endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</aside>
+		<!-- article aside ends + article footer begins -->
+		<footer class="post-footer">
+			<div class="post-categories">
+				{%- assign categories = page.categories %}
+				categories:
+				{%- for category in categories %}
+				<a class="post-category" href="{{site.baseurl}}/categories#{{category}}">{{category |
+					downcase}}</a>
+				{%- endfor %}
+			</div>
+		</footer>
+		<!-- article footer ends -->
+	</article>
+</main>
+{%- include footer.html %}

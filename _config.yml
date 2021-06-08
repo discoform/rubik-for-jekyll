@@ -1,0 +1,70 @@
+# Welcome to Rubik!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+
+# This theme currently uses data files for the following:
+  # Author bios and social media links
+  # Navigation
+  # 
+
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Rubik Theme # Add your Site Title
+tagline: Rubik is an open source theme for Jekyll bloggers # Add your Site Tagline
+author: Rubik Theme
+email: addyour@email.com # addyour@email.com
+description: Rubik is an open source theme for Jekyll bloggers # Add a site description here
+summary: Rubik is an open source theme for Jekyll bloggers # Add your site summary here. It can be similar to the description amd will be used by Jekyll SEO Tag
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "www.website.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: /assets/logos/rubik-logo.svg
+
+###############################################################
+## Social settings (follows the Jekyll SEO format (https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md))
+###############################################################
+twitter:
+  username: Rubik Theme
+  card: summary
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+###############################################################
+## Plugins. See the gemfile for more.
+###############################################################
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+
+###############################################################
+## Permaink Settings will not include subdirectories (e.g. "mysite.com/posts/my-post" will instead be "mysite.com/my-post" )
+###############################################################
+
+permalink: /:title/
+
+###############################################################
+## Sass Settings
+###############################################################
+sass:
+  sass_dir: _scss-rubik
+  style: compressed

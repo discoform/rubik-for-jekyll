@@ -1,0 +1,12 @@
+@mixin menu-expand {
+	ul {
+		display: none;
+		overflow: hidden;
+	}
+
+	&.responsive ul {
+		margin-top: $base-spacing/2;
+		width: 100%;
+		display: block;
+	}
+}

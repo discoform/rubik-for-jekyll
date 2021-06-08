@@ -1,0 +1,22 @@
+{% include header.html%}
+<main>
+  <article>
+    <!-- category archive begins -->
+      {% for category in site.categories %}
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <section id="{{ category_name | slugize }}">
+      <h2>{{ category_name }}</h2>
+      <ul>
+        {% for post in site.categories[category_name] %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}"> {{post.date | date: "%b %d, %Y" }}
+            <strong>{{post.title}}</strong></a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+      {% endfor %}
+    <!-- category archive ends -->
+  </article>
+</main>
+{% include footer.html%}

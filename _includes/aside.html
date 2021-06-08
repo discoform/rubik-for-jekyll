@@ -1,0 +1,9 @@
+<aside>
+
+        <ul>
+            {% for item in site.data.siteNavigation.asideNavigation -%}
+            <li><a href="{{ site.baseurl }}{{ item.link }}">{{item.name | upcase}}</a></li>
+            {% endfor -%}
+        </ul>
+
+</aside>

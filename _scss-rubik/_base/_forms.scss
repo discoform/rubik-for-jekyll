@@ -1,0 +1,72 @@
+form {
+
+	border: 2px solid;
+	padding: $base-spacing/2;
+	background: var(--light);
+	@media only screen and (max-width: calc(#{$breakpoint-2} - 1px)) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+	fieldset,
+	input,
+	optgroup,
+	select,
+	textarea {
+		padding: $base-spacing/2;
+		margin: $base-spacing/2 0;
+		border:2px solid var(--dark);
+		font-size: 1rem;
+	}
+
+	textarea {
+		width: 100%;
+		min-height: 150px;
+	}
+
+	label,
+	legend {
+
+		margin: $base-spacing / 4 0;
+		font-weight: bolder;
+	}
+
+	[type="email"],
+	[type="text"] {
+		width: 100%;
+	}
+
+	[type="button"],
+	[type="reset"],
+	[type="submit"] {
+		width: auto;
+		cursor: pointer;
+		appearance: button;
+		line-height: inherit;
+		margin: auto;
+	}
+
+	[type="button"]:focus,
+	[type="reset"]:focus,
+	[type="submit"]:focus {
+		outline: 0;
+	}
+
+	[type="reset"],
+	[type="submit"] {
+		margin-bottom: 0;
+	}
+
+	select {
+		text-transform: none;
+	}
+
+	[type="checkbox"] {
+		appearance: checkbox;
+	}
+
+	[type="radio"] {
+		appearance: radio;
+	}
+

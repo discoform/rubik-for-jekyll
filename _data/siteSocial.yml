@@ -1,0 +1,11 @@
+# The social widget will display in the site footer
+socialWidget:
+  display: true
+  items:
+    - network: Twitter
+      url: https://twitter.com/twitter
+      display: true
+    - network: RSS Feed
+      url: /feed.xml
+      display: true
+

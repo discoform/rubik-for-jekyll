@@ -1,0 +1,15 @@
+# _data/picture.yml
+
+presets:
+  default:
+    markup: auto
+    nomarkdown: false
+    formats: [webp, original]
+    widths: [50, 300, 360, 414, 600, 700, 800, 1200]
+    fallback_width: 760
+    fallback_format: original
+    quality: 85
+    data_sizes: true
+    dimension_attributes: true
+    attributes:
+      img:  loading="lazy" data-sizes="auto"'

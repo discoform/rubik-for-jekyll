@@ -1,0 +1,44 @@
+// site footer *****************************************************
+// ****************************************************************************************
+
+footer.site-footer {
+    @include menu-expand;
+    max-width: $breakpoint-2;
+    text-align: center;
+    .icon {
+        margin: $base-spacing/2 auto;
+    }
+
+    body.home & {
+        max-width: $breakpoint-3;
+    }
+    span.widget-title {
+        display: none;
+    }
+    &.responsive span.widget-title {
+        display: block;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+// desktop flexbox for footer content *****************************************************
+// ****************************************************************************************
+@media only screen and (min-width: $breakpoint-2) {
+    footer.site-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: $base-spacing auto;
+        text-align: unset;
+        .icon {
+            margin: unset;
+        }
+
+        .widget {
+            padding: 0 $base-spacing/2;
+            margin-bottom: auto;
+        }
+    }
+}

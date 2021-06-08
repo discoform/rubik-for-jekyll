@@ -1,0 +1,354 @@
+// ****************************************************************************************
+// mobile stuff *****************************************************
+// ****************************************************************************************
+@media only screen and (max-width:calc( #{$breakpoint-1} - 1px)) {
+	h1 {
+		font-size: 1.75rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	ul,
+	ol {
+		padding-left: 0;
+	}
+}
+@media only screen and (max-width:calc( #{$breakpoint-2} - 1px)) {
+	body {
+		display: flex;
+		flex-direction: column;
+
+		main {
+			width: 100%;
+			max-width: $breakpoint-3/2;
+			margin: auto;
+		}
+		aside {
+			text-align: center;
+			padding: $base-spacing/2;
+		}
+
+		.post-meta {
+			padding: $base-spacing/2;
+			line-height: 2;
+
+			justify-content: flex-start;
+			> * {
+				margin-right: $base-spacing;
+			}
+		}
+		// homepage mobile stuff *****************************************************
+		// ****************************************************************************************
+		&.home {
+			section {
+				margin: auto 2%;
+			}
+			article {
+				margin: $base-spacing auto $base-spacing;
+				text-align: center;
+				picture,
+				picture img {
+					margin: auto;
+					background: var(--dark);
+				}
+				section.post-content,
+				aside {
+					padding: 0 $base-spacing/2;
+
+					button {
+						margin: 1rem auto;
+					}
+				}
+				.post-header h1 {
+					margin: 2rem auto 1rem auto;
+				}
+			}
+		}
+		// post layout mobile stuff *****************************************************
+		// ****************************************************************************************
+		&.post,
+		&.page {
+			.post-header {
+				display: flex;
+				flex-direction: column;
+				> * {
+					margin: $base-spacing/10 auto;
+					padding: 0 2%;
+					text-align: center;
+				}
+				.reading-time {
+					order: 3;
+				}
+				.post-title {
+					order: 2;
+				}
+				.post-meta {
+					order: 1;
+					span,
+					time {
+						margin: 0;
+					}
+				}
+				.post-summary {
+					order: 4;
+				}
+				.post-share {
+					order: 5;
+					ul {
+						padding-left: 0;
+
+						li {
+							display: inline-block;
+						}
+					}
+				}
+			}
+			.post-content:not(.full-width),
+			.post-header,
+			.page-content,
+			.post-footer {
+				padding: 0 2%;
+				margin-left: auto;
+				margin-right: auto;
+
+				picture,
+				picture img {
+					margin: auto;
+					background: var(--dark);
+				}
+			}
+		}
+	}
+	aside {
+		border: 1px solid var(--medium);
+		margin: $base-spacing 2% $base-spacing;
+
+		ul {
+			padding: 0;
+			list-style-type: none;
+			text-align: left;
+		}
+	}
+}
+// ****************************************************************************************
+// desktop stuff layout *****************************************************
+// ****************************************************************************************
+@media only screen and (min-width: $breakpoint-2) {
+	body.home {
+		// header, footer, and main content are extra wide on hompeage  *****************************************************
+		// ****************************************************************************************
+		header.site-header,
+		main,
+		footer.site-footer {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: $breakpoint-3;
+		}
+		// homepage top section displays the three most recent posts, the third of which spans all columns  *****************************************************
+		// ****************************************************************************************
+		section.top {
+			display: grid;
+			grid-gap: $base-spacing;
+			margin-bottom: $base-spacing;
+			article {
+				margin-top: auto;
+				margin-bottom: auto;
+				h1 {
+					margin-top: $base-spacing/4;
+					margin-bottom: $base-spacing/4;
+				}
+				img,
+				picture {
+					background: var(--dark);
+					margin: auto;
+				}
+			}
+
+			article:nth-child(3n) {
+				grid-column-start: 1;
+				grid-column-end: 3;
+				display: flex;
+				img {
+					max-width: 700px;
+				}
+				section {
+					margin: auto $base-spacing;
+				}
+			}
+		}
+		// homepage bottom section displays another 4 most recent posts, the last of which is full width on the page  *****************************************************
+		// ****************************************************************************************
+		section.bottom {
+			display: grid;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-gap: $base-spacing;
+
+			h2 {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+
+			article {
+				display: flex;
+				grid-column-start: 1;
+
+				img {
+					max-width: 300px;
+					margin: auto $base-spacing auto 0;
+				}
+
+				section {
+					margin: auto 0;
+				}
+			}
+		}
+		aside {
+			&:before {
+				content: "↓";
+			}
+			a {
+				display: inline-block;
+				color: var(--dark);
+			}
+		}
+	}
+	// post layout desktop styles  *****************************************************
+	// ****************************************************************************************
+
+	body.post article {
+		display: grid;
+		max-width: $breakpoint-2;
+		margin: auto;
+		gap: $base-spacing;
+
+		header.post-header {
+			grid-row: 1;
+			grid-column: 2;
+			display: flex;
+			flex-direction: column;
+			.reading-time {
+				order: 1;
+			}
+			.post-title {
+				order: 2;
+			}
+			.post-meta {
+				order: 2;
+			}
+			.post-summary {
+				order: 3;
+			}
+			.post-share {
+				order: 3;
+				ul {
+					padding-left: 0;
+
+					li {
+						display: inline-block;
+					}
+				}
+			}
+		}
+		section.post-content {
+			grid-row: 1 / 3;
+		}
+		aside {
+			grid-column: 2;
+			grid-row: 2;
+		}
+		.post-footer {
+			grid-column: 1 / 3;
+		}
+	}
+	// page layout desktop styles  *****************************************************
+	// ****************************************************************************************
+	body.page,
+	body.archive {
+		max-width: $breakpoint-2;
+		margin-left: auto;
+		margin-right: auto;
+
+		article {
+			display: grid;
+			gap: $base-spacing;
+
+			.post-content {
+				grid-column: 1;
+			}
+			aside {
+				grid-column: 2;
+			}
+		}
+	}
+
+	// archive sections will display in a 2 column grid *****************************************************
+	// ****************************************************************************************
+	body.archive {
+		section {
+			grid-column: 1;
+		}
+
+		section:nth-child(even) {
+			grid-column: 2;
+		}
+	}
+}
+
+// smooth the transition between awkward breakpoints *****************************************************
+// ****************************************************************************************
+@media only screen and (min-width:$breakpoint-2) and (max-width:calc( #{$breakpoint-3} + #{$base-spacing*2})) {
+	body {
+		margin-left: $base-spacing;
+		margin-right: $base-spacing;
+	}
+}
+
+// move this to a widget scss file
+
+.published {
+	time {
+		display: block;
+	}
+}
+
+nav a {
+	text-decoration: none;
+}
+
+iframe {
+	margin: $base-spacing auto;
+}
+figcaption {
+	margin-top: $base-spacing/4;
+}
+img {
+	box-shadow: 0 0 1px var(--dark);
+}
+
+img.icon {
+	width: 32px;
+	height: 32px;
+	box-shadow: unset;
+
+	.site-footer & {
+		width: 16px;
+		height: 16px;
+		transition: all 0.15s;
+	}
+
+	.site-footer.responsive & {
+		transform: rotate(180deg);
+	}
+}
+
+div#search-container input {
+	width: 86%;
+	max-width: $breakpoint-1/2;
+}

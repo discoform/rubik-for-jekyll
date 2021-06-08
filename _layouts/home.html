@@ -1,0 +1,49 @@
+{% include header.html%}
+<main>
+
+	{%- assign sorted = site.posts | sort: 'date' | reverse %}
+	<!-- top section begins with three most recent posts -->
+	<section class="top">
+		{%- for post in sorted limit:3 %}
+		<article>
+			{% if post.image -%} {% picture "{{post.image}}" --link {{
+			post.url }} --alt {{post.thumbnail_image_alt}} %} {%- endif -%}
+			<section class="post-content">
+				<header class="post-header">
+					<h1 class="post-title">{{post.title}}</h1>
+					<span><time datetime="{{post.date}}">{{ post.date | date: "%b %d, %Y" }}</time></span>
+				</header>
+				<p>{{post.description}}</p>
+				<button><a href="{{post.url}}">Read The Post</a></button>
+			</section>
+		</article>
+		{%- endfor %}
+	</section>
+	<!-- top section ends -->
+	{% if site.posts.size > 3 %}
+	<!--  bottom section begins if there are more than three posts on the site -->
+	<section class="bottom">
+		<h2 class="post-title">Earlier Posts</h2>
+		{%- for post in sorted limit:4 offset: 3 %}
+		<article>
+			{% if post.image -%} {% picture "{{post.image}}" 1:1 --link {{
+			post.url }} --alt {{post.thumbnail_image_alt}} %} {%- endif -%}
+			<section class="post-content">
+				<header class="post-header">
+					<h3>{{post.title}}</h3>
+				</header>
+				<p>{{post.description}}</p>
+				<button><a href="{{post.url}}">Read The Post</a></button>
+			</section>
+		</article>
+		{%- endfor %}
+		<!-- if the bottom section exists, the aside will fit into the flow asymmetrically -->
+		{% include aside.html %}
+	</section>
+	{%else%}
+	<!-- if the bottom section does not exist, the aside will align left below the top section -->
+	{% include aside.html %}
+	<!-- bottom section ends -->
+	{%endif%}
+</main>
+{% include footer.html%}
