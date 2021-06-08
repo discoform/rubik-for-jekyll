@@ -12,9 +12,9 @@ categories:
     [Design]
 ---
 
-Great NTS sessions design by theDesigners Republic.Ae t-shirts go quickly, so don't hesitate on this one.
+## autechre.warp.net
 
-
+Great NTS sessions design by the Designers Republic. Ae t-shirts go quickly, so don't hesitate on this one.
 
 [Get the shirt at the Ae store](https://autechre.warp.net/release/123162-autechre-autechre-nts-sessions-white-t-shirt)
 
