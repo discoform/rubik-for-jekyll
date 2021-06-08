@@ -9,8 +9,8 @@ dateModified: 2021-05-18 21:42:38 -0700
 - Free to use
 - Semantic Markup
 - Minimal use of Javascript and CSS
-- Perfect lighthouse scores
-- Perfect Web Vitals scores
+- High lighthouse scores
+- High Web Vitals scores
 
 Issues and enhancements are welcome. You can find the project board here.
 

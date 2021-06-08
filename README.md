@@ -6,8 +6,8 @@
 - Free to use
 - Semantic Markup
 - Minimal use of Javascript and CSS
-- Perfect lighthouse scores
-- Perfect Web Vitals scores
+- High lighthouse scores
+- High Web Vitals scores
 
 Issues and enhancements are welcome. [You can find the project board here](https://github.com/discoform/rubik-for-jekyll/projects/1).
 
