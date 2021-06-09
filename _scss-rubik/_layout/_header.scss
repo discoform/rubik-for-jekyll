@@ -45,6 +45,8 @@ img.site-logo {
 @media only screen and (min-width: $breakpoint-2) {
     header.site-header {
         max-width: $breakpoint-2;
+        min-height: 60px;
+        align-items: center;
 
         body.home & {
             max-width: $breakpoint-3;
