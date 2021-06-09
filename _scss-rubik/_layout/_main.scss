@@ -52,6 +52,7 @@
 			article {
 				margin: $base-spacing auto $base-spacing;
 				text-align: center;
+
 				picture,
 				picture img {
 					margin: auto;
@@ -68,6 +69,10 @@
 				.post-header h1 {
 					margin: 2rem auto 1rem auto;
 				}
+			}
+
+			section.top article:first-of-type {
+				margin-top: unset;
 			}
 		}
 		// post layout mobile stuff *****************************************************
@@ -309,4 +314,3 @@
 		margin-right: $base-spacing;
 	}
 }
-
