@@ -19,7 +19,7 @@
 
 Issues and enhancements are welcome. [You can find the project board here](https://github.com/discoform/rubik-for-jekyll/projects/1).
 
-_❗ NOTE: This theme is not recommended recommended for GitHub Pages hosting due to the use of [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag).  (use the [__Starter__ plan from Netlify instead](https://www.netlify.com/pricing/))_
+_❗ NOTE: This theme is not recommended for GitHub Pages hosting due to the use of [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag).  (use the [__Starter__ plan from Netlify instead](https://www.netlify.com/pricing/))_
 
 
 <a class="btn-dtn" href="https://app.netlify.com/start/deploy?repository=https://github.com/discoform/rubik-for-jekyll">
