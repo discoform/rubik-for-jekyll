@@ -3,11 +3,15 @@ layout: page
 title: About
 dateModified: 2021-05-18 21:42:38 -0700
 ---
+
 # Rubik: A minimal Jekyll theme template.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/121e1d01-ba6c-419d-b20e-fe26a6615620/deploy-status)](https://app.netlify.com/sites/discoform-rubik/deploys)
+
+
 
 [VIEW THE DEMO](https://discoform-rubik.netlify.app)
+
+
 
 
 - Simple to use
@@ -21,6 +25,10 @@ Issues and enhancements are welcome. [You can find the project board here](https
 
 _❗ NOTE: This theme is not recommended for GitHub Pages hosting due to the use of [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag).  (use the [__Starter__ plan from Netlify instead](https://www.netlify.com/pricing/))_
 
+
+<a class="btn-dtn" href="https://app.netlify.com/start/deploy?repository=https://github.com/discoform/rubik-for-jekyll">
+    <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
+  </a>
 
 
 ---
@@ -54,7 +62,7 @@ The current configuration automatically builds resized `.webp` images for most o
 
 _❗ NOTE: Jekyll Picture Tag can be a little fussy (at least, it has been for me). If you see build errors in Netlify you should ensure that your Build Image Selection is set to __Ubuntu Trusty 14.04__ or __Ubuntu Focal 20.04 (beta)__._
 
-![netlify-build-image-selection](../netlify-build-image-selection.png)
+![netlify-build-image-selection](netlify-build-image-selection.png)
 
 ---
 
@@ -78,3 +86,26 @@ The Rubik theme has a simple HTML contact form with the [Netlify data attributio
 
 We've implemented the solution suggested by [WebJeda](https://blog.webjeda.com/instant-jekyll-search/). The solution works well and is lightweight, but not very feature-rich.
 
+
+
+---
+
+
+## Performance: Lighthouse and Web Vitals
+
+Current scores for [a typical post are near perfect](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdiscoform-rubik.netlify.app%2Fmy-name-is-wendy-view-writer%2F). We lose a few SEO points on the demo site because I've blocked the demo from indexing. If indexing were allowed the SEO score would also be 100pts.
+
+![lighthouse scores](lighthouse-post.png)
+
+### ❗ NOTE: Posts that include iframe embeds from sources like YouTube and SoundCloud will take a performance hit.
+
+Example:
+
+![lighthouse scores](lighthouse-with-embed.png)
+
+
+
+---
+
+## Deploy Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/121e1d01-ba6c-419d-b20e-fe26a6615620/deploy-status)](https://app.netlify.com/sites/discoform-rubik/deploys)

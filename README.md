@@ -83,6 +83,24 @@ The Rubik theme has a simple HTML contact form with the [Netlify data attributio
 We've implemented the solution suggested by [WebJeda](https://blog.webjeda.com/instant-jekyll-search/). The solution works well and is lightweight, but not very feature-rich.
 
 
+
+---
+
+
+## Performance: Lighthouse and Web Vitals
+
+Current scores for [a typical post are near perfect](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdiscoform-rubik.netlify.app%2Fmy-name-is-wendy-view-writer%2F). We lose a few SEO points on the demo site because I've blocked the demo from indexing. If indexing were allowed the SEO score would also be 100pts.
+
+![lighthouse scores](lighthouse-post.png)
+
+### ❗ NOTE: Posts that include iframe embeds from sources like YouTube and SoundCloud will take a performance hit.
+
+Example:
+
+![lighthouse scores](lighthouse-with-embed.png)
+
+
+
 ---
 
 ## Deploy Status
