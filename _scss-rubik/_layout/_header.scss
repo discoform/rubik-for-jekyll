@@ -29,14 +29,13 @@ img.site-logo {
             flex-direction: column;
             align-items: center;
 
-            .icon{
-                margin: auto;
-            }
+
 
             li a {
                 padding: $base-spacing/4;
                 display: block;
                 border-bottom: 2px solid var(--dark);
+                text-decoration: none;
             }
 
             &.responsive {

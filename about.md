@@ -6,13 +6,7 @@ dateModified: 2021-05-18 21:42:38 -0700
 
 # Rubik: A minimal Jekyll theme template.
 
-
-
-
 [VIEW THE DEMO](https://discoform-rubik.netlify.app)
-
-
-
 
 - Simple to use
 - Free to use
@@ -25,14 +19,7 @@ Issues and enhancements are welcome. [You can find the project board here](https
 
 _❗ NOTE: This theme is not recommended for GitHub Pages hosting due to the use of [Jekyll Picture Tag](https://github.com/rbuchberger/jekyll_picture_tag).  (use the [__Starter__ plan from Netlify instead](https://www.netlify.com/pricing/))_
 
-
-<a class="btn-dtn" href="https://app.netlify.com/start/deploy?repository=https://github.com/discoform/rubik-for-jekyll">
-    <img src="https://www.netlify.com/img/deploy/button.svg" title="Deploy to Netlify">
-  </a>
-
-
 ---
-
 
 ## Plugins
 
@@ -86,8 +73,6 @@ The Rubik theme has a simple HTML contact form with the [Netlify data attributio
 
 We've implemented the solution suggested by [WebJeda](https://blog.webjeda.com/instant-jekyll-search/). The solution works well and is lightweight, but not very feature-rich.
 
-
-
 ---
 
 
@@ -102,8 +87,6 @@ Current scores for [a typical post are near perfect](https://lighthouse-dot-webd
 Example:
 
 ![lighthouse scores](../lighthouse-with-embed.png)
-
-
 
 ---
 
