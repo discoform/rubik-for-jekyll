@@ -8,6 +8,10 @@ img.site-logo {
     width: 200px;
     box-shadow: none;
 }
+
+nav a {
+    text-decoration: none;
+}
 @media only screen and (max-width: calc(#{$breakpoint-2} - 1px)) {
     header.site-header {
         display: flex;
@@ -29,13 +33,10 @@ img.site-logo {
             flex-direction: column;
             align-items: center;
 
-
-
             li a {
                 padding: $base-spacing/4;
                 display: block;
                 border-bottom: 2px solid var(--dark);
-                text-decoration: none;
             }
 
             &.responsive {
