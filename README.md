@@ -2,6 +2,8 @@
 
 # Rubik: A minimal Jekyll theme template.
 
+![Rubik Screenshot](https://repository-images.githubusercontent.com/371775411/60e895f9-5f98-4ba3-9140-073611f39f0e)
+
 [VIEW THE DEMO](https://discoform-rubik.netlify.app)
 
 - Simple to use
