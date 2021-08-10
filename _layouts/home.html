@@ -1,6 +1,5 @@
 {% include header.html%}
 <main>
-
 	{%- assign sorted = site.posts | sort: 'date' | reverse %}
 	<!-- top section begins with three most recent posts -->
 	<section class="top">
@@ -26,7 +25,7 @@
 		<h2 class="post-title">Earlier Posts</h2>
 		{%- for post in sorted limit:4 offset: 3 %}
 		<article>
-			{% if post.image -%} {% picture "{{post.image}}" 1:1 --link {{
+			{% if post.image -%} {% picture "{{post.image}}" 1:1 center --link {{
 			post.url }} --alt {{post.image_alt}} %} {%- endif -%}
 			<section class="post-content">
 				<header class="post-header">
