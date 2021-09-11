@@ -1,8 +1,12 @@
 
 
-# Rubik: A minimal Jekyll theme template.
 
 ![Rubik Screenshot](https://repository-images.githubusercontent.com/371775411/60e895f9-5f98-4ba3-9140-073611f39f0e)
+
+---
+
+# Rubik: A minimal Jekyll theme template.
+
 
 [VIEW THE DEMO](https://discoform-rubik.netlify.app)
 
@@ -48,7 +52,8 @@ The current configuration automatically builds resized `.webp` images for most o
 
 _❗ NOTE: Jekyll Picture Tag can be a little fussy (at least, it has been for me). If you see build errors in Netlify you should ensure that your Build Image Selection is set to __Ubuntu Trusty 14.04__ or __Ubuntu Focal 20.04 (beta)__._
 
-![netlify-build-image-selection](netlify-build-image-selection.png)
+
+![netlify-build-image-selection](../netlify-build-image-selection.png)
 
 ---
 
@@ -79,13 +84,13 @@ We've implemented the solution suggested by [WebJeda](https://blog.webjeda.com/i
 
 Current scores for [a typical post are near perfect](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdiscoform-rubik.netlify.app%2Fmy-name-is-wendy-view-writer%2F). We lose a few SEO points on the demo site because I've blocked the demo from indexing. If indexing were allowed the SEO score would also be 100pts.
 
-![lighthouse scores](lighthouse-post.png)
+![lighthouse scores](../lighthouse-post.png)
 
 ### ❗ NOTE: Posts that include iframe embeds from sources like YouTube and SoundCloud will take a performance hit.
 
 Example:
 
-![lighthouse scores](lighthouse-with-embed.png)
+![lighthouse scores](../lighthouse-with-embed.png)
 
 ---
 
